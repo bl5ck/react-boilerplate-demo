@@ -15,3 +15,11 @@ export function toMoneyFormat(number) {
     .replace(/(\d)(?=(\d{3})+,)/g, '$1.')
     .replace(/,0+$/g, '');
 }
+
+export function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export function uncapitalize(string) {
+  return string.charAt(0).toLowerCase() + string.slice(1);
+}
